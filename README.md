@@ -134,9 +134,8 @@ This project is open-source and available under the MIT License. Feel free to mo
 
 ---
 
-## Contact
+## Contact ⭐️⭐️⭐️⭐️⭐️
 For questions or feedback, feel free to reach out:
 - Email: sunny@ajiroghene.dev
-- GitHub: ⭐️ From [@Ajioz](https://github.com/Ajioz)
-<br />
+- GitHub: https://github.com/Ajioz
 ```
