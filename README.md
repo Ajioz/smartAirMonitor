@@ -2,6 +2,7 @@
 # Air Quality Monitoring Project with MQ-135 and MQ-136 Gas Sensors
 
 ## Overview
+
 This project uses the **MQ-135** and **MQ-136** gas sensors to monitor air quality by detecting various gases such as CO, Alcohol, CO2, Toluene, NH4 (Ammonia), Acetone, and H2S (Hydrogen Sulfide). The sensors are connected to an Arduino UNO, which processes the sensor data and outputs the concentration of gases in parts per million (PPM).
 
 The project is designed for educational purposes, environmental monitoring, or indoor air quality assessment.
@@ -9,6 +10,7 @@ The project is designed for educational purposes, environmental monitoring, or i
 ---
 
 ## Features
+
 - **Multi-gas Detection**: Detects multiple gases including CO, Alcohol, CO2, Toluene, NH4, Acetone, and H2S.
 - **Calibration**: Automatically calibrates the MQ-135 sensor in clean air during startup.
 - **Real-time Monitoring**: Outputs gas concentrations in real-time via the serial monitor.
@@ -18,6 +20,7 @@ The project is designed for educational purposes, environmental monitoring, or i
 ---
 
 ## Hardware Components
+
 1. **Arduino UNO** - Microcontroller board.
 2. **MQ-135 Sensor** - Detects gases like CO, Alcohol, CO2, Toluene, NH4, and Acetone.
 3. **MQ-136 Sensor** - Specialized for detecting Hydrogen Sulfide (H2S).
@@ -27,12 +30,15 @@ The project is designed for educational purposes, environmental monitoring, or i
 ---
 
 ## Wiring Diagram
+
 ### MQ-135 Connections:
+
 - **VCC** → 5V on Arduino
 - **GND** → GND on Arduino
 - **AOUT** → A0 on Arduino
 
 ### MQ-136 Connections:
+
 - **VCC** → 5V on Arduino
 - **GND** → GND on Arduino
 - **AOUT** → A1 on Arduino
@@ -41,7 +47,9 @@ The project is designed for educational purposes, environmental monitoring, or i
 ---
 
 ## Software Setup
+
 ### Prerequisites
+
 1. Install the Arduino IDE from [Arduino's official website](https://www.arduino.cc/en/software).
 2. Install the **MQUnifiedsensor** library:
    - Open Arduino IDE.
@@ -49,6 +57,7 @@ The project is designed for educational purposes, environmental monitoring, or i
    - Search for "MQUnifiedsensor" and install it.
 
 ### Code Upload
+
 1. Copy the provided code into a new Arduino sketch.
 2. Connect your Arduino UNO to your computer via USB.
 3. Select the correct board and port under `Tools` → `Board` and `Tools` → `Port`.
@@ -57,31 +66,39 @@ The project is designed for educational purposes, environmental monitoring, or i
 ---
 
 ## Calibration
+
 ### MQ-135 Calibration
+
 - Place the sensor in clean air (preferably outdoors or in a well-ventilated area).
 - Power on the Arduino and wait for the calibration process to complete (indicated by "Calibrating please wait." in the serial monitor).
 - The calculated `R0` value will be displayed in the serial monitor. This value is critical for accurate readings.
 
 ### MQ-136 Calibration
+
 - The MQ-136 sensor does not require pre-calibration but relies on the `calculateR0()` function to determine the baseline resistance in clean air.
 - Ensure the sensor is exposed to clean air during the initial power-up for accurate results.
 
 ---
 
 ## Usage
+
 1. Open the **Serial Monitor** in the Arduino IDE (`Tools` → `Serial Monitor`).
 2. Set the baud rate to **9600**.
 3. Observe the real-time gas concentration readings for both MQ-135 and MQ-136 sensors.
 
 ### Sample Output
 ```
-** Values from MQ-135 ****
-|    CO   |  Alcohol |   CO2  |  Toluen  |  NH4  |  Aceton  |
-|   10.5   |   5.2   |   420.0   |   2.1   |   8.3   |   3.7   |
 
-** Values from MQ-136 ****
-|  Raw Value   |  Voltage |   Rs  |  Ohms, H2S Concentration 
-   |   512   |   2.50   |   10000.0   |   1.2 ppm
+** Values from MQ-135 \*\***
+| CO | Alcohol | CO2 | Toluen | NH4 | Aceton |
+
+| 10.5 | 5.2 | 420.0 | 2.1 | 8.3 | 3.7 |
+
+** Values from MQ-136 \*\***
+| Raw Value | Voltage | Rs | Ohms, H2S Concentration
+
+| 512 | 2.50 | 10000.0 | 1.2 ppm
+
 ```
 
 ---
@@ -120,5 +137,6 @@ This project is open-source and available under the MIT License. Feel free to mo
 ## Contact
 For questions or feedback, feel free to reach out:
 - Email: sunny@ajiroghene.dev
-- GitHub: [Ajioz](https://github.com/ajioz)
+- GitHub: ⭐️ From [@Ajioz](https://github.com/Ajioz)
+<br />
 ```
